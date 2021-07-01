@@ -1,3 +1,34 @@
+// -----------------------------------------------------------------------------
+// This file imports all index files from scss directory;
+
+@import 
+        'abstracts/index.scss',// variables, functions, all sass flavours
+        'vendors/index.scss', // reset our workspace for cross browser consistantly
+        'base/index.scss',// base stuff
+        'layout/index.scss';// last but not least, the layout style for this project
+       
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ============================================= */
 /*              Base styles                      */
