@@ -17,19 +17,19 @@
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: map-get($theme-colours, col-9);
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: map-get($theme-colours, col-1);
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: map-get($theme-colours, col-10);
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: map-get($theme-colours, col-2);
   }
   
   

@@ -13,7 +13,7 @@
   }
   
   .link {
-    color: map-get($map: $theme-colour, $key: col-11);
+    color: map-get($map: $theme-colours, $key: col-11);
     font-weight: map-get($map: $font, $key: weight-bold);
   }
   
