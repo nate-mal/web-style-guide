@@ -4,7 +4,7 @@
 
 * {
     font-family: map-get($map: $font, $key: family-primary );
-    color: map-get($font, family-primary);
+    color: map-get($font, color-primary);
     box-sizing: border-box;
   }
   

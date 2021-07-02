@@ -1,9 +1,10 @@
 /* ============================================= */
   /*              Variable                       */
   /* ============================================= */
+
+
+
   /*              Colours                       */
-
-
 
 
 
@@ -36,9 +37,10 @@
 
 
   $font : (
-     'family-primary': 'Lato' sans-serif,
+     
       'color-primary': #777,
-      'line-height-primary': 1.45,
+      'line-height-primary': "1.45em",
       'weight-thin' : 300,
       'weight-bold': 700,  
+      'family-primary': ('Lato', sans-serif),
       )
