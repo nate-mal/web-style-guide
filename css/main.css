@@ -1,11 +1,11 @@
-/* Error: Undefined variable.
- *   ,
- * 6 |     font-family: map-get($map: $font, $key: family-primary );
- *   |                                ^^^^^
- *   '
- *   scss/base/_base.scss 6:32  @import
- *   scss/base/_index.scss 6:9  @import
- *   scss/main.scss 7:9         root stylesheet */
+/* Error: expected ":".
+ *    ,
+ * 23 |      'family-primary': 'Lato', sans-serif,
+ *    |                                          ^
+ *    '
+ *   scss/abstracts/_variables.scss 23:42  @import
+ *   scss/abstracts/_index.scss 6:9        @import
+ *   scss/main.scss 5:9                    root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -15,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 6 \2502      font-family: map-get($map: $font, $key: family-primary );\a   \2502                                 ^^^^^\a   \2575 \a   scss/base/_base.scss 6:32  @import\a   scss/base/_index.scss 6:9  @import\a   scss/main.scss 7:9         root stylesheet";
+  content: "Error: expected \":\".\a    \2577 \a 23 \2502       'family-primary': 'Lato', sans-serif,\a    \2502                                           ^\a    \2575 \a   scss/abstracts/_variables.scss 23:42  @import\a   scss/abstracts/_index.scss 6:9        @import\a   scss/main.scss 5:9                    root stylesheet";
 }

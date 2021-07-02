@@ -13,7 +13,7 @@
   }
   
   .default {
-    background-color: #51ddfc;
+    background-color: map-get($map: $theme-colours, $key: col-11 );
   }
   
   .error {
