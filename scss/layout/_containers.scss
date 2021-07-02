@@ -1,0 +1,35 @@
+/* ============================================= */
+  /*              Grid System                      */
+  /* ============================================= */
+  @use "sass:list";
+  @use "sass:map";
+  @import 'extends.scss';
+
+  .container {
+    padding: 0 10px;
+  }
+  
+  .row {
+    @include flexy(column);
+    padding: 1em 10px;
+  }
+  .theme {
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  @for $index from 1 through 12 {
+      .theme.col-#{$index} {
+      $color: map-get($theme-colours, col-#{$index});
+      background-color: $color;
+    }
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+  
+  
+  

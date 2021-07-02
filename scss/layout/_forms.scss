@@ -1,0 +1,18 @@
+/* ============================================= */
+  /*              Forms                            */
+  /* ============================================= */
+  
+  .form {
+    flex-basis: 100%;
+  }
+  
+  .input{
+    display: block;
+    width: 94%;
+    margin: 10px auto 0;
+    border: none;
+    padding: 10px;
+    border-bottom: 5px solid map-get($theme-colours,col-13);
+  }
+  
+  

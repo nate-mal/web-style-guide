@@ -1,0 +1,29 @@
+/* ============================================= */
+  /*              Typography                       */
+  /* ============================================= */
+  
+  .headline-primary {
+    color: map-get($theme-colours,col-13);
+    margin-left: 10px;
+  }
+  
+  .headline-secondary {
+    font-weight: 300;
+    color: map-get($map: $theme-colours, $key: font-primary);
+  }
+  
+  .link {
+    color: #51ddfc;
+    font-weight: 700;
+  }
+  
+  .blockquote {
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 8px solid #58e1c1;
+    border-radius: 5px;
+  }
+  

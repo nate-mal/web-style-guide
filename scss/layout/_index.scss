@@ -2,7 +2,12 @@
 // This file imports all layout files, styles that are responsable for how the site feels and responds to  different screen sizes;
 // ---------------------------
 
-@import 'container.scss',
+@import 
+        'containers.scss',
+        'navigation.scss',
+        'images.scss',
+        'forms.scss',
         'header.scss',
         'footer.scss';
+        
         
