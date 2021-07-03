@@ -17,3 +17,9 @@
   max-width: $max-width;
   @content;
 }
+
+@mixin mq($break) {
+  @media screen and (min-width:$break) {
+    @content; 
+  }
+}
