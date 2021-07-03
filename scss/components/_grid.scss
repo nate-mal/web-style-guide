@@ -24,6 +24,9 @@
               text-align: center;
               }
             }
+            @include mq(s){
+              margin-top: 0;
+            }
           }
     
 
@@ -35,18 +38,21 @@
     } 
   }
 
-  [class^=col]{
+  [class|=col] {
     @include mq(s){
     @include flexy{
       justify-content: center;
       align-items: center;
     } 
-      padding: 10px;
-      margin-top: 0;
+      margin-top: 0; 
 
       & + & {
         margin-left: 10px;
       }
-    
     }
+
+    &:not([class=theme]) {
+      padding: 10px;
+    }
+    
   }
