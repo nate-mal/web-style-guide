@@ -19,14 +19,8 @@
       flex-direction: row;
     }
   }
-
-  %theme {
-    margin-top: 10px;
-    flex-basis: 100%;
-    min-height: 25px;
-    padding: 10px;
-    border-radius: 5px;
-  }
+   
+  
   @for $index from 1 through 12 {
         .theme.col-#{$index} {
           @extend %theme;
@@ -47,6 +41,21 @@
         flex-basis:8.33% * $index;  
       }
     } 
+  }
+
+  [class^=col]{
+    @include mq(s){
+    @include flexy{
+      justify-content: center;
+      align-items: center;
+    }
+      margin-top: 0;
+
+      & + & {
+        margin-left: 10px;
+      }
+    
+    }
   }
 
 

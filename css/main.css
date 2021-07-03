@@ -410,6 +410,14 @@ a {
   text-transform: uppercase;
   border-radius: 5px;
 }
+@media screen and (min-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
+  .btn + .btn {
+    margin-left: 10px;
+  }
+}
 
 .default {
   background-color: #51ddfc;
@@ -434,6 +442,14 @@ a {
 /* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
+.theme.col-12, .theme.col-11, .theme.col-10, .theme.col-9, .theme.col-8, .theme.col-7, .theme.col-6, .theme.col-5, .theme.col-4, .theme.col-3, .theme.col-2, .theme.col-1 {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .container {
   padding: 0 10px;
 }
@@ -456,14 +472,6 @@ a {
   .row {
     flex-direction: row;
   }
-}
-
-.theme.col-12, .theme.col-11, .theme.col-10, .theme.col-9, .theme.col-8, .theme.col-7, .theme.col-6, .theme.col-5, .theme.col-4, .theme.col-3, .theme.col-2, .theme.col-1 {
-  margin-top: 10px;
-  flex-basis: 100%;
-  min-height: 25px;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 .theme.col-1 {
@@ -607,6 +615,20 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  [class^=col] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+}
+
 .card {
   flex-basis: 100%;
 }
@@ -621,6 +643,13 @@ a {
   flex-basis: 100%;
   padding-left: 0;
 }
+@media screen and (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
 
 .nav-link {
   text-align: center;
@@ -629,6 +658,11 @@ a {
   display: block;
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .nav-link {
+    flex-basis: 100px;
+  }
 }
 
 .nav-link:hover {
@@ -655,6 +689,10 @@ a {
   padding: 13px;
   border: 1px solid #ccc;
 }
+.img-logo {
+  margin-left: initial;
+  margin-right: initial;
+}
 
 /* ============================================= */
 /*              Forms                            */
@@ -678,40 +716,5 @@ a {
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@media (min-width: 768px) {
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-  }
-
-  [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .nav-link {
-    flex-basis: 100px;
-  }
-
-  .btn {
-    padding: 10px 30px;
-  }
-
-  .btn + .btn {
-    margin-left: 10px;
-  }
-
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
-}
 
 /*# sourceMappingURL=main.css.map */
