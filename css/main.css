@@ -355,7 +355,7 @@ template {
 }
 
 p {
-  line-height: "1.45em";
+  line-height: 1.45em;
 }
 
 a {
@@ -451,6 +451,11 @@ a {
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 1em 10px;
+}
+@media screen and (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
 }
 
 .theme.col-12, .theme.col-11, .theme.col-10, .theme.col-9, .theme.col-8, .theme.col-7, .theme.col-6, .theme.col-5, .theme.col-4, .theme.col-3, .theme.col-2, .theme.col-1 {
@@ -674,10 +679,6 @@ a {
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: 768px) {
-  .row {
-    flex-direction: row;
-  }
-
   [class^=col] {
     display: flex;
     justify-content: center;

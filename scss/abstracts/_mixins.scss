@@ -19,7 +19,7 @@
 }
 
 @mixin mq($break) {
-  @media screen and (min-width:$break) {
+  @media screen and (min-width:map-get($map: $breakpoints, $key: $break)) {
     @content; 
   }
 }

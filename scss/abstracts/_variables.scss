@@ -35,8 +35,14 @@
   $font : (
      
       'color-primary': #777,
-      'line-height-primary': "1.45em",
+      'line-height-primary': 1.45em,
       'weight-thin' : 300,
       'weight-bold': 700,  
       'family-primary': ('Lato', sans-serif),
-      )
+      );
+
+
+      $breakpoints : (
+      's':768px,
+
+      );
