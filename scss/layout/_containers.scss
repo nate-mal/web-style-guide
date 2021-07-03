@@ -1,4 +1,6 @@
-
+/* ============================================= */
+  /*             Containers                  */
+  /* ============================================= */
 
 
   .container {
@@ -10,58 +12,7 @@
   .card {
     flex-basis: 100%;
   }
-  /* ============================================= */
-  /*              Grid System                      */
-  /* ============================================= */
-  @use "sass:list";
-  @use "sass:map";
-  @import 'extends.scss';
-  .row {
-    @include flexy(column);
-    padding: 1em 10px;
-    @include mq(s){
-      flex-direction: row;
-    }
-  }
-   
   
-  @for $index from 1 through 12 {
-        .theme.col-#{$index} {
-          @extend %theme;
-          $color: map-get($theme-colours, col-#{$index});
-          background-color: $color;
-            @if $index==7{
-              @include mq(s){
-              @include center;
-              text-align: center;
-              }
-            }
-          }
-    
-
-   .col-#{$index},
-   .theme.col-#{$index} {
-      @include mq(s){
-        flex-basis:8.33% * $index;  
-      }
-    } 
-  }
-
-  [class^=col]{
-    @include mq(s){
-    @include flexy{
-      justify-content: center;
-      align-items: center;
-    } 
-      padding: 10px;
-      margin-top: 0;
-
-      & + & {
-        margin-left: 10px;
-      }
-    
-    }
-  }
 
   
   
