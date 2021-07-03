@@ -654,7 +654,6 @@ a {
     align-items: center;
   }
 }
-
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -668,7 +667,6 @@ a {
     flex-basis: 100px;
   }
 }
-
 .nav-link:hover {
   color: #ffff;
   background-color: #58e1c1;
