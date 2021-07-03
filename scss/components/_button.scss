@@ -17,27 +17,19 @@
         margin-left: 10px;
       }
     }
+    
   }
   
-  .default {
-    background-color: map-get($map: $theme-colours, $key: col-11 );
+@each $state, $color in $button-colours {
+
+  .#{$state} {
+    background-color: $color;
+    &:hover {
+      background-color: lighten($color,15%);
+    }
   }
-  
-  .error {
-    background-color: map-get($theme-colours, col-9);
-  }
-  
-  .info {
-    background-color: map-get($theme-colours, col-1);
-  }
-  
-  .success {
-    background-color: map-get($theme-colours, col-10);
-  }
-  
-  .warning {
-    background-color: map-get($theme-colours, col-2);
-  }
-  
-  
-  
+}
+
+
+
+
