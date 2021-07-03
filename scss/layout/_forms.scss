@@ -7,9 +7,10 @@
   }
   
   .input{
-    @include center(94%);
-    
-    margin-top: 10px;
+
+    @include center;
+    width: 94%;
+    margin-top:10px;
     padding: 10px;
     border: none;
     border-bottom: 5px solid map-get($theme-colours,col-13);
