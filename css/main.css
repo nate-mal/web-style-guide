@@ -437,6 +437,14 @@ a {
 .container {
   padding: 0 10px;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+  }
+}
 
 .row {
   display: flex;
@@ -445,7 +453,7 @@ a {
   padding: 1em 10px;
 }
 
-.theme {
+.theme.col-12, .theme.col-11, .theme.col-10, .theme.col-9, .theme.col-8, .theme.col-7, .theme.col-6, .theme.col-5, .theme.col-4, .theme.col-3, .theme.col-2, .theme.col-1 {
   margin-top: 10px;
   flex-basis: 100%;
   min-height: 25px;
@@ -457,48 +465,141 @@ a {
   background-color: #927bc1;
 }
 
+@media screen and (min-width: 768px) {
+  .col-1,
+.theme.col-1 {
+    flex-basis: 8.33%;
+  }
+}
+
 .theme.col-2 {
   background-color: #fd7856;
+}
+
+@media screen and (min-width: 768px) {
+  .col-2,
+.theme.col-2 {
+    flex-basis: 16.66%;
+  }
 }
 
 .theme.col-3 {
   background-color: #deb2ee;
 }
 
+@media screen and (min-width: 768px) {
+  .col-3,
+.theme.col-3 {
+    flex-basis: 24.99%;
+  }
+}
+
 .theme.col-4 {
   background-color: #7ee6fd;
+}
+
+@media screen and (min-width: 768px) {
+  .col-4,
+.theme.col-4 {
+    flex-basis: 33.32%;
+  }
 }
 
 .theme.col-5 {
   background-color: #88d9a0;
 }
 
+@media screen and (min-width: 768px) {
+  .col-5,
+.theme.col-5 {
+    flex-basis: 41.65%;
+  }
+}
+
 .theme.col-6 {
   background-color: #4da2bb;
 }
 
+@media screen and (min-width: 768px) {
+  .col-6,
+.theme.col-6 {
+    flex-basis: 49.98%;
+  }
+}
+
 .theme.col-7 {
   background-color: #ec9fa3;
+}
+@media screen and (min-width: 768px) {
+  .theme.col-7 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .col-7,
+.theme.col-7 {
+    flex-basis: 58.31%;
+  }
 }
 
 .theme.col-8 {
   background-color: #fd9f85;
 }
 
+@media screen and (min-width: 768px) {
+  .col-8,
+.theme.col-8 {
+    flex-basis: 66.64%;
+  }
+}
+
 .theme.col-9 {
   background-color: #e4757a;
+}
+
+@media screen and (min-width: 768px) {
+  .col-9,
+.theme.col-9 {
+    flex-basis: 74.97%;
+  }
 }
 
 .theme.col-10 {
   background-color: #63cc82;
 }
 
+@media screen and (min-width: 768px) {
+  .col-10,
+.theme.col-10 {
+    flex-basis: 83.3%;
+  }
+}
+
 .theme.col-11 {
   background-color: #51ddfc;
 }
 
+@media screen and (min-width: 768px) {
+  .col-11,
+.theme.col-11 {
+    flex-basis: 91.63%;
+  }
+}
+
 .theme.col-12 {
   background-color: #80e8d1;
+}
+
+@media screen and (min-width: 768px) {
+  .col-12,
+.theme.col-12 {
+    flex-basis: 99.96%;
+  }
 }
 
 .card {
@@ -573,19 +674,6 @@ a {
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: 768px) {
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .row {
     flex-direction: row;
   }
@@ -599,54 +687,6 @@ a {
 
   [class^=col] + [class^=col] {
     margin-left: 10px;
-  }
-
-  .col-1 {
-    flex-basis: 8.33%;
-  }
-
-  .col-2 {
-    flex-basis: 16.67%;
-  }
-
-  .col-3 {
-    flex-basis: 25%;
-  }
-
-  .col-4 {
-    flex-basis: 33.33%;
-  }
-
-  .col-5 {
-    flex-basis: 41.67%;
-  }
-
-  .col-6 {
-    flex-basis: 50%;
-  }
-
-  .col-7 {
-    flex-basis: 58.33%;
-  }
-
-  .col-8 {
-    flex-basis: 66.67%;
-  }
-
-  .col-9 {
-    flex-basis: 75%;
-  }
-
-  .col-10 {
-    flex-basis: 83.33%;
-  }
-
-  .col-11 {
-    flex-basis: 91.67%;
-  }
-
-  .col-12 {
-    flex-basis: 100%;
   }
 
   .nav {
