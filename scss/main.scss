@@ -2,7 +2,7 @@
 // This file imports all index files from scss directory;
 
 @import 
-        'abstracts/index.scss',// variables, functions, all sass flavours
+        'utilities/index.scss',// variables, functions, all sass flavours
         'base/index.scss',// base stuff
         'components/index.scss', 
         'layout/index.scss';// last but not least, the layout style for this project
