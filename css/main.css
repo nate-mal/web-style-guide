@@ -425,6 +425,7 @@ a {
   background-color: #51ddfc;
 }
 .default:hover {
+  transition: background-color 0.3s ease-in-out;
   background-color: #9cecfd;
 }
 
@@ -432,6 +433,7 @@ a {
   background-color: #e4757a;
 }
 .error:hover {
+  transition: background-color 0.3s ease-in-out;
   background-color: #f1b5b8;
 }
 
@@ -439,6 +441,7 @@ a {
   background-color: #927bc1;
 }
 .info:hover {
+  transition: background-color 0.3s ease-in-out;
   background-color: #bdafd9;
 }
 
@@ -446,6 +449,7 @@ a {
   background-color: #63cc82;
 }
 .success:hover {
+  transition: background-color 0.3s ease-in-out;
   background-color: #9ddfb0;
 }
 
@@ -453,6 +457,7 @@ a {
   background-color: #fd7856;
 }
 .warning:hover {
+  transition: background-color 0.3s ease-in-out;
   background-color: #feb4a2;
 }
 
